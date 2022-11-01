@@ -222,6 +222,7 @@ img {
   fill: currentColor;
   width: 18px;
   height: 18px;
+  transition: color 250ms var(--line-function);
 }
 .modal-close:hover .modal-close-icon {
   color: var(--acent-color);
@@ -264,6 +265,8 @@ img {
   background-color: var(--secondary-text-color);
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  transition: outline 250ms var(--line-function),
+    border-color 250ms var(--line-function), fill 250ms var(--line-function);
 }
 .modal-form-input::placeholder {
   padding-left: 30px;
@@ -289,6 +292,38 @@ img {
 .modal-form-text:focus,
 .modal-form-text:not(:placeholder-shown) {
   padding: 12px 16px;
+}
+.modal-form-checkbox {
+  position: relative;
+  display: block;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.checkbox {
+  appearance: none;
+  transition: border 250ms var(--line-function),
+    background-color 250ms var(--line-function), fill 250ms var(--line-function);
+}
+.checkbox-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-423px, 4px);
+  fill: transparent;
+  border: 2px solid var(--primary-title-color);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.checkbox:checked ~ .checkbox-icon {
+  border: 2px solid transparent;
+  background-color: var(--acent-color);
+  fill: var(--acent-color);
+}
+.modal-form-link {
+  display: inline-block;
+  text-decoration: underline;
+  color: var(--acent-color);
 }
 /* Serction */
 .advantages,

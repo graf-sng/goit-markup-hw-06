@@ -296,7 +296,7 @@
     </main>
     <footer class="footer">
       <div class="container footer-flex">
-        <div class="footer-item">
+        <div>
           <a href="./index.html" class="logo"
             >Web<span class="footer-white">Studio</span></a
           >
@@ -324,7 +324,7 @@
             </ul>
           </address>
         </div>
-        <div class="footer-item">
+        <div>
           <p class="footer-subtitle">Приєднуйтесь</p>
           <ul class="footer-list-icon">
             <li>
@@ -356,6 +356,24 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div>
+          <p class="footer-subtitle">Підпишіться на розсилку</p>
+          <form name="subscribe-form" autocomplite="on">
+            <label
+              ><input
+                class="subscribe-input"
+                type="email"
+                name="email-subscribe"
+                placeholder="E-mail"
+            /></label>
+            <button class="hero-btn subscribe-btn" type="submit">
+              Підписатися
+              <svg width="24" height="24">
+                <use href="./icons/icon.svg#icon-telegram"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
