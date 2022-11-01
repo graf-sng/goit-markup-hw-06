@@ -301,6 +301,8 @@ img {
   line-height: 1.7;
 }
 .checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   transition: border 250ms var(--line-function),
     background-color 250ms var(--line-function), fill 250ms var(--line-function);
